@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+
 @UIApplicationMain
 
 @available (iOS 13.0, *)  //чтобы работало на более старых версиях 

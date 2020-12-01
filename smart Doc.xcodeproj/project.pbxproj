@@ -17,9 +17,12 @@
 		589F52FC251BD016007C6FEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589F52FA251BD016007C6FEF /* LaunchScreen.storyboard */; };
 		589F5304251BD191007C6FEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F5303251BD191007C6FEF /* ViewController.swift */; };
 		589F5306251BDDBA007C6FEF /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F5305251BDDBA007C6FEF /* welcomeViewController.swift */; };
+		58D0009B2573C355007642C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D000992573C340007642C8 /* ViewController.swift */; };
+		968FD9E64F2D10052F1B081F /* Pods_smart_Doc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9211819D1BDAC9ED424CFED5 /* Pods_smart_Doc.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4041C23DF54E1071A342CB47 /* Pods-smart Doc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smart Doc.debug.xcconfig"; path = "Target Support Files/Pods-smart Doc/Pods-smart Doc.debug.xcconfig"; sourceTree = "<group>"; };
 		5808E17525252E4E0089C0DE /* menuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
 		5808E17725252F550089C0DE /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		589F52E9251BD013007C6FEF /* smart Doc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smart Doc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +35,9 @@
 		589F52FD251BD016007C6FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		589F5303251BD191007C6FEF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../../../Applications/developer/my_service_book/my service book/ViewController.swift"; sourceTree = "<group>"; };
 		589F5305251BDDBA007C6FEF /* welcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
+		58D000992573C340007642C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87ED3C18C5E97B7553E2B233 /* Pods-smart Doc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smart Doc.release.xcconfig"; path = "Target Support Files/Pods-smart Doc/Pods-smart Doc.release.xcconfig"; sourceTree = "<group>"; };
+		9211819D1BDAC9ED424CFED5 /* Pods_smart_Doc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smart_Doc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968FD9E64F2D10052F1B081F /* Pods_smart_Doc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +57,8 @@
 			children = (
 				589F52EB251BD013007C6FEF /* smart Doc */,
 				589F52EA251BD013007C6FEF /* Products */,
+				6F48BCD9AA83869CD6B08106 /* Pods */,
+				CAB61D7595291675F8C482B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,9 +73,9 @@
 		589F52EB251BD013007C6FEF /* smart Doc */ = {
 			isa = PBXGroup;
 			children = (
-				589F52EC251BD013007C6FEF /* AppDelegate.swift */,
+				58D000982573C33F007642C8 /* delegate */,
 				589F5303251BD191007C6FEF /* ViewController.swift */,
-				589F52EE251BD013007C6FEF /* SceneDelegate.swift */,
+				58D000992573C340007642C8 /* ViewController.swift */,
 				589F52F2251BD013007C6FEF /* Main.storyboard */,
 				5808E17525252E4E0089C0DE /* menuViewController.swift */,
 				5808E17725252F550089C0DE /* profileViewController.swift */,
@@ -79,6 +88,33 @@
 			path = "smart Doc";
 			sourceTree = "<group>";
 		};
+		58D000982573C33F007642C8 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				589F52EC251BD013007C6FEF /* AppDelegate.swift */,
+				589F52EE251BD013007C6FEF /* SceneDelegate.swift */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		6F48BCD9AA83869CD6B08106 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4041C23DF54E1071A342CB47 /* Pods-smart Doc.debug.xcconfig */,
+				87ED3C18C5E97B7553E2B233 /* Pods-smart Doc.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CAB61D7595291675F8C482B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9211819D1BDAC9ED424CFED5 /* Pods_smart_Doc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 589F5300251BD016007C6FEF /* Build configuration list for PBXNativeTarget "smart Doc" */;
 			buildPhases = (
+				C9FB0D3B9E13C30BBD649425 /* [CP] Check Pods Manifest.lock */,
 				589F52E5251BD013007C6FEF /* Sources */,
 				589F52E6251BD013007C6FEF /* Frameworks */,
 				589F52E7251BD013007C6FEF /* Resources */,
+				3675981901F12AD1C45586FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +183,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3675981901F12AD1C45586FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smart Doc/Pods-smart Doc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smart Doc/Pods-smart Doc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-smart Doc/Pods-smart Doc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9FB0D3B9E13C30BBD649425 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smart Doc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		589F52E5251BD013007C6FEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -156,6 +236,7 @@
 				589F5304251BD191007C6FEF /* ViewController.swift in Sources */,
 				5808E17625252E4E0089C0DE /* menuViewController.swift in Sources */,
 				589F5306251BDDBA007C6FEF /* welcomeViewController.swift in Sources */,
+				58D0009B2573C355007642C8 /* ViewController.swift in Sources */,
 				589F52EF251BD013007C6FEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +379,7 @@
 		};
 		589F5301251BD016007C6FEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4041C23DF54E1071A342CB47 /* Pods-smart Doc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +398,7 @@
 		};
 		589F5302251BD016007C6FEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87ED3C18C5E97B7553E2B233 /* Pods-smart Doc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -342,7 +425,7 @@
 				589F52FF251BD016007C6FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		589F5300251BD016007C6FEF /* Build configuration list for PBXNativeTarget "smart Doc" */ = {
 			isa = XCConfigurationList;
@@ -351,7 +434,7 @@
 				589F5302251BD016007C6FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

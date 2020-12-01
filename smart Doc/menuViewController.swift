@@ -18,6 +18,8 @@ class menuViewController: UIViewController, UIScrollViewDelegate {
     var button3 = UIButton()
     var button4 = UIButton()
     
+    var sizeButton = Int()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,9 +58,12 @@ class menuViewController: UIViewController, UIScrollViewDelegate {
         self.menuPageScrollView.addSubview(button)
     }
     func buttonHarakter()  {
+        let sizeButton = menuPageScrollView.frame.size.width / 2
+        print("ширина кнопки: \(menuPageScrollView.frame.size.width / 2)")
+        print("высота кнопки :\(menuPageScrollView.frame.size.height / 5)")
         // добавление кнопки 1
         button1 = UIButton(type: .custom )
-        button1.frame = CGRect(x: 10  , y: 20, width: (menuPageScrollView.frame.size.width / 2) - 10 , height: menuPageScrollView.frame.size.height / 5)
+        button1.frame = CGRect(x: 10  , y: 20, width: sizeButton - 10 , height: sizeButton - 10)
         button1.setBackgroundImage(UIImage(named:"bol v spine.png"), for: .normal)
         button1.setTitle("Боль в спине", for: .normal)
         addButton(button: button1)
@@ -66,7 +71,7 @@ class menuViewController: UIViewController, UIScrollViewDelegate {
         
         // добавление кнопки 2
         button2 = UIButton(type: .custom )
-        button2.frame = CGRect(x: button1.frame.size.width + 20  , y: 20, width: (menuPageScrollView.frame.size.width / 2) - 20, height: menuPageScrollView.frame.size.height / 5)
+        button2.frame = CGRect(x: button1.frame.size.width + 20  , y: 20, width: sizeButton - 20, height: sizeButton - 10)
         button2.setTitle("Вторая", for: .normal)
         button2.setBackgroundImage(UIImage(named:"golovnaya bol"), for: .normal)
         
@@ -75,14 +80,14 @@ class menuViewController: UIViewController, UIScrollViewDelegate {
         
         // добавление кнопки 3
         button3 = UIButton(type: .custom )
-        button3.frame = CGRect(x: 10  , y: button1.frame.size.height + 30, width: (menuPageScrollView.frame.size.width / 2) - 10 , height: menuPageScrollView.frame.size.height / 5)
+        button3.frame = CGRect(x: 10  , y: button1.frame.size.height + 30, width: sizeButton - 10 , height: sizeButton - 10)
         button3.setTitle("Третья", for: .normal)
         button3.setBackgroundImage(UIImage(named:"gorlo"), for: .normal)
         addButton(button: button3)
         
         // добавление кнопки 4
         button4 = UIButton(type: .custom )
-        button4.frame = CGRect(x: button1.frame.size.width + 20  , y: button1.frame.size.height + 30, width: (menuPageScrollView.frame.size.width / 2) - 20, height: menuPageScrollView.frame.size.height / 5)
+        button4.frame = CGRect(x: button1.frame.size.width + 20  , y: button1.frame.size.height + 30, width: sizeButton - 20, height: sizeButton - 10)
         button4.setTitle("Четвертая", for: .normal)
         button4.setBackgroundImage(UIImage(named:"problemi s zubami"), for: .normal)
         addButton(button: button4)
